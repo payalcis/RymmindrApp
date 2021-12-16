@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.resources-popup-box {
+    visibility: hidden;
+    opacity: 0;
+    width: 330px;
+    box-shadow: 0 3px 6px rgb(64 87 106 / 16%);
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    transform: translate(10px, 10px);
+    top: 58px;
+    right: -7px;
+    transition: all 0.3s;
+    background: white;
+}
+
+.box-header {
+    background: rgb(23, 115, 191);
+    background: linear-gradient( 0deg, rgba(23, 115, 191, 1) 0%, rgba(23, 186, 255, 1) 100%, rgba(9, 9, 121, 1) 100%);
+    padding: 30px 30px 45px;
+    position: relative;
+    z-index: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-header:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: url(../images/shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.box-header h4 {
+    font-size: 26px;
+    margin: 10px 0;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.box-header p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.80);
+    font-weight: 300;
+    margin: 0;
+}
+
+.box-container {
+    box-shadow: 0 3px 6px rgb(64 87 106 / 16%);
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    margin-top: -25px;
+    width: 262px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.box-container h5 {
+    margin: 5px 0;
+    font-size: 17px;
+    color: #343434;
+    font-weight: 500;
+}
+
+.box-container p {
+    font-size: 14px;
+    color: #818193;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.box-container p a {
+    font-weight: 600;
+    color: #818193;
+    position: relative;
+}
+
+.box-container p a:hover {
+    color: #1782cd;
+}
+
+.nav-listing ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-listing ul li a {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-listing ul li a span {
+    color: #818193;
+    display: inline-block;
+    margin-top: 15px;
+    margin: 10px auto 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nav-listing ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.nav-listing ul li {
+    max-width: 33.33%;
+    width: 33.33%;
+    margin: 10px 0 15px 0;
+}
+
+.still-need-help {
+    box-shadow: 0 3px 6px rgb(64 87 106 / 16%);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 262px;
+    font-size: 17px;
+    color: rgba(52, 52, 52, 0.8);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D2EFFF;
+}
+
+.still-need-help:hover {
+    color: #1783cd;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+
+.help-btn {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+}
+
+.help-btn:hover .resources-popup-box {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+}
+
+.nav-listing ul li a:hover span {
+    color: #168FD8;
+}
+
+.resources-popup-box:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -11px;
+    background-color: #34c2fe;
+    z-index: -9999999;
+    transform: rotate( 45deg);
+    border-radius: 1px;
+    right: 30px;
+    left: unset;
+}
+
+.box-container p a:after {
+    border-radius: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: #168FD8;
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -7px;
+}
+
+a.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end {
+    color: white;
+}

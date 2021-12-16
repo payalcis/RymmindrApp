@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Roboto' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+    width: 300px !important;
+    display: block;
+    background: aliceblue;
+    border: 1px solid lightgrey;
+}
+
+figure img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.btn-toolbar {
+    float: right !important;
+    margin-top: 30px !important;
+}
+
+.btn-school.btn-big {
+    font-weight: bold;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.commentSection input {
+    margin-bottom: 15px !important;
+}
+
+.commentSection .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 1px solid #E3E3E3 !important;
+}
+
+.commentsSection .MuiButton-text {
+    margin-top: 11px !important;
+    margin-right: 85px !important;
+}
+
+.commentsSection .MuiButton-text .MuiButton-label {
+    justify-content: flex-start !important;
+}
+
+.commentsSection .MuiButton-text .MuiButton-startIcon {
+    margin-left: 0 !important;
+}
